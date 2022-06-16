@@ -126,11 +126,23 @@ class _ChatPage extends State<ChatPage> {
                   children: [
                     FlatButton(
                       onPressed: isConnected ? () => _sendMessage('1') : null,
-                      child: ClipOval(child: Image.asset('images/ledOn.png')),
+                      child: ClipOval(child: Image.asset('images/forward.png')),
+                    ),
+                    FlatButton(
+                      onPressed: isConnected ? () => _sendMessage('2') : null,
+                      child: ClipOval(child: Image.asset('images/backward.png')),
+                    ),
+                    FlatButton(
+                      onPressed: isConnected ? () => _sendMessage('3') : null,
+                      child: ClipOval(child: Image.asset('images/right.png')),
+                    ),
+                    FlatButton(
+                      onPressed: isConnected ? () => _sendMessage('4') : null,
+                      child: ClipOval(child: Image.asset('images/left.png')),
                     ),
                     FlatButton(
                       onPressed: isConnected ? () => _sendMessage('0') : null,
-                      child: ClipOval(child: Image.asset('images/ledOff.png')),
+                      child: ClipOval(child: Image.asset('images/stop.png')),
                     ),
                   ],
                 ),
